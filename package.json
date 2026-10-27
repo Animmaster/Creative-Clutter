@@ -1,0 +1,16 @@
+{
+  "name": "codegrid-gsap-creative-clutter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "gsap": "^3.14.2",
+    "vite": "^8.0.1"
+  }
+}

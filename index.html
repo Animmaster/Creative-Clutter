@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GSAP Creative Clutter </title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <section class="desk">
+      <div class="header">
+        <h1>Creative Clutter</h1>
+        <p>
+          The best ideas live somewhere between a coffee stain and a half-open
+          folder, scattered things have a way of finding others when you stop
+          trying to organize.
+        </p>
+      </div>
+
+      <div class="item" id="music"><img src="/music.png" /></div>
+      <div class="item" id="cd"><img src="/cd.png" /></div>
+      <div class="item" id="dialog"><img src="/dialog.png" /></div>
+      <div class="item" id="folder"><img src="/folder.png" /></div>
+      <div class="item" id="macmini"><img src="/macmini.png" /></div>
+      <div class="item" id="paper"><img src="/paper.png" /></div>
+      <div class="item" id="passport"><img src="/passport.png" /></div>
+      <div class="item" id="portrait"><img src="/portrait.png" /></div>
+      <div class="item" id="appicon"><img src="/appicon.png" /></div>
+      <div class="item" id="lighter"><img src="/lighter.png" /></div>
+      <div class="item" id="cursor"><img src="/cursor.png" /></div>
+
+      <div class="modes">
+        <button class="active" data-mode="chaos">
+          <ion-icon name="flash-outline"></ion-icon>
+        </button>
+        <button data-mode="cleanup">
+          <ion-icon name="grid-outline"></ion-icon>
+        </button>
+        <button data-mode="notebook">
+          <ion-icon name="book-outline"></ion-icon>
+        </button>
+      </div>
+    </section>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script type="module" src="/script.js"></script>
+  </body>
+</html>

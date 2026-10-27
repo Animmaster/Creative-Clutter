@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Instrument+Serif:ital@0;1&display=swap");
+
+:root {
+  --base-100: #f5f2ed;
+  --base-200: #e0dfd7;
+  --base-300: #5f5f5f;
+  --base-400: #171717;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  background: var(--base-100);
+  color: var(--base-400);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.desk {
+  position: relative;
+  width: 100%;
+  height: 100svh;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.header {
+  position: absolute;
+  width: 400px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.header h1 {
+  font-family: "Instrument Serif", sans-serif;
+  font-size: 4rem;
+  font-weight: 600;
+  letter-spacing: -0.02rem;
+  line-height: 1;
+}
+
+.header p {
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: var(--base-300);
+}
+
+.item {
+  position: absolute;
+  will-change: top, left, transform;
+}
+
+.modes {
+  position: fixed;
+  bottom: 7.5svh;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.5rem;
+  z-index: 10;
+}
+
+.modes button {
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.25rem;
+  color: var(--base-300);
+  background: var(--base-100);
+  border: 1px solid var(--base-200);
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 500ms ease;
+  cursor: pointer;
+}
+
+.modes button:active {
+  transform: scale(0.9);
+}
+
+.modes button.active {
+  background: var(--base-200);
+  border: 1px solid var(--base-200);
+}
+
+@media (max-width: 1400px) {
+  .desk {
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 1000px) {
+  .desk::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(245, 242, 237, 0.5);
+  }
+
+  .item {
+    filter: saturate(0);
+  }
+}
